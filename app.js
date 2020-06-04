@@ -16,9 +16,8 @@ var commentRoutes = require("./routes/comments"),
 	campgroundRoutes = require("./routes/campgrounds"),
 	indexRoutes 		 = require("./routes/index");
 
-
-
-mongoose.connect("mongodb+srv://jacjanowski:Janowski1!@cluster0-x7bqg.mongodb.net/<dbname>?retryWrites=true&w=majority", {
+//"mongodb+srv://jacjanowski:Janowski1!@cluster0-x7bqg.mongodb.net/<dbname>?retryWrites=true&w=majority"
+mongoose.connect(process.env.DATABASEURL, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useCreateIndex: true
@@ -27,6 +26,8 @@ mongoose.connect("mongodb+srv://jacjanowski:Janowski1!@cluster0-x7bqg.mongodb.ne
   .catch(err => {
     console.log(`DB Connection Error: ${err.message}`);
   });
+console.log(process.env.DATABASEURL);
+
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
