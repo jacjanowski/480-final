@@ -15,9 +15,8 @@ var express = require("express"),
 var commentRoutes = require("./routes/comments"),
 	campgroundRoutes = require("./routes/campgrounds"),
 	indexRoutes 		 = require("./routes/index");
-
-var url =process.env.DATABASEURL || "mongodb+srv://jacjanowski:Janowski1!@cluster0-x7bqg.mongodb.net/<dbname>?retryWrites=true&w=majority"; 
-//"mongodb+srv://jacjanowski:Janowski1!@cluster0-x7bqg.mongodb.net/<dbname>?retryWrites=true&w=majority"
+//"mongodb://localhost/yelp_camp_v12"
+var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v12";
 mongoose.connect(url, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
@@ -27,8 +26,6 @@ mongoose.connect(url, {
   .catch(err => {
     console.log(`DB Connection Error: ${err.message}`);
   });
-
-
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
