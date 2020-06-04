@@ -18,7 +18,7 @@ var commentRoutes = require("./routes/comments"),
 
 
 
-mongoose.connect("mongodb://localhost/yelp_camp_v12", {
+mongoose.connect("mongodb+srv://jacjanowski:Janowski1!@cluster0-x7bqg.mongodb.net/<dbname>?retryWrites=true&w=majority", {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useCreateIndex: true
