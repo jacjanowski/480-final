@@ -16,7 +16,7 @@ var commentRoutes = require("./routes/comments"),
 	campgroundRoutes = require("./routes/campgrounds"),
 	indexRoutes 		 = require("./routes/index");
 //"mongodb://localhost/yelp_camp_v12"
-var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v12";
+var url = process.env.DATABASEURL || "mongodb://localhost/final";
 mongoose.connect(url, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
@@ -40,7 +40,7 @@ seedDB();
 
 //passport Configuration
 app.use(require("express-session")({
-		secret: "Rusty wins cutest dogs",
+		secret: "Rusty",
 		resave: false,
 		saveUninitialized: false
 	}));
