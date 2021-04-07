@@ -35,12 +35,12 @@ app.use(flash());
 
 
 //seed the DB
-seedDB();
+// seedDB();
 
 
 //passport Configuration
 app.use(require("express-session")({
-		secret: "Rusty",
+		secret: "secretcode123",
 		resave: false,
 		saveUninitialized: false
 	}));
