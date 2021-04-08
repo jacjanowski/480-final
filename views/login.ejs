@@ -1,15 +1,18 @@
 <%- include("./partials/header") %>
 
 
+<div  class="container">
+	<div style="text-align: center;" class="row">
+		<h1>
+			Login page
+		</h1>
 
-<h1>
-	Login page
-</h1>
-
-<form action="/login" method="POST">
-	<input type="text" name="username" placeholder="username">
-	<input type="password" name="password" placeholder="password">
-	<input type="submit" value="Login!">
-</form>
+		<form id="test" action="/login" method="POST">
+			<input type="text" name="username" placeholder="username">
+			<input type="password" name="password" placeholder="password">
+			<input type="submit" value="Login!">
+		</form>
+	</div>
+</div>
 
 <%- include("./partials/footer") %>
