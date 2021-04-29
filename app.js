@@ -15,7 +15,6 @@ var express = require("express"),
 var commentRoutes = require("./routes/comments"),
 	campgroundRoutes = require("./routes/campgrounds"),
 	indexRoutes 		 = require("./routes/index");
-//"mongodb://localhost/yelp_camp_v12"
 var url = process.env.DATABASEURL || "mongodb://localhost/final";
 mongoose.connect(url, {
     useUnifiedTopology: true,
@@ -40,7 +39,7 @@ app.use(flash());
 
 //passport Configuration
 app.use(require("express-session")({
-		secret: "secretcode123",
+		secret: "Dietz",
 		resave: false,
 		saveUninitialized: false
 	}));
@@ -94,5 +93,5 @@ app.use("/campgrounds/:id/comments", commentRoutes);
 
 
 app.listen(process.env.PORT || 3000, () => {
-  console.log("YelpCamp server is live");
+  console.log("Gallery of the Globe server is live");
 })

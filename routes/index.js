@@ -23,7 +23,7 @@ router.get("/register", function(req,res){
 router.post("/register", function(req,res){
 	
 	var newUser = new User({username: req.body.username});
-	if(req.body.adminCode === 'secretcode123') {
+	if(req.body.adminCode === 'Dietz') {
 		newUser.isAdmin = true;
 	}
 	User.register(newUser, req.body.password, function(err, user){
@@ -32,7 +32,7 @@ router.post("/register", function(req,res){
 		  return res.redirect("/register");
 	}
 		passport.authenticate("local")(req,res,function(){
-			req.flash("success", "Welcome to YelpCamp " + user.username + "!");
+			req.flash("success", "Welcome to the Gallery of the Globe " + user.username + "!");
 			res.redirect("/campgrounds");
 		});
 	});
