@@ -8,7 +8,7 @@ Web app that that allows users to make an account, post pictures of wherever the
 Visit the website [here](https://fierce-eyrie-65571.herokuapp.com/) to see the deployed version of our application.
 
 ## Getting Started
-Make sure you have all the necessary frameworks installed when running our application. Before installing, check to see if you have them installed already.
+**_THIS INSTALLING IS FOR Windows_**. Make sure you have all the necessary frameworks installed when running our application. Before installing, check to see if you have them installed already.
 Will be using [MongoDB](https://www.mongodb.com/try/download/community) and [NodeJS](https://nodejs.org/en/download/). 
 
 After downloading, run the following commands to confirm:
@@ -17,6 +17,7 @@ After downloading, run the following commands to confirm:
 
 `npm -v`
 
+Once confirmed, next we go to installing the program. Go ahead and download the _.zip_ file for this repo.
 ## Built With
 * [Semantic UI](https://semantic-ui.com/) - The CSS framework used
 * [Font Awesome](https://fontawesome.com/v4.7.0/) - Fonts used 
