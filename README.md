@@ -54,7 +54,10 @@ Next, check out the tables within the program by running `show tables`. Now, let
 
 ### Create
 
-Create a new user: 
+Create a new post to feature on the home page
+
+-Ex: `db.campgrounds.insert({name: "Dietz's Addition", image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80", description: "I am a teacher at UIC and I teach various classes. This class project is related to my Database course that I teach. This is quite a good looking project!"})`
+
 
 
 ### Read 
@@ -70,11 +73,17 @@ Read in all of the entries from a particular table.
 
 Change the Title from of the campground 'Misty Winds' to 'Upper Penninsula'.
 
-`db.campgrounds.update({"name":"Misty Winds"}, {$set :{"name":"Upper Peninsula"}})`
+- Ex: `db.campgrounds.update({"name":"Misty Winds"}, {$set :{"name":"Upper Peninsula"}})`
 
 ### Delete
 
+Go ahead and create a user by signing up. Now in the Mongo Shell, check if the user is there
 
+- Ex: `db.users.find({"username":"[USERNAME HERE]"})`
+
+Once confirmed that you have created the user, go ahead and delete them by doing the following:
+
+- Ex: `db.users.remove({"username":"[USERNAME HERE]"})`
 
 
 ## Built With
