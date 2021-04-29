@@ -42,6 +42,36 @@ This is where we use CRUD fundamentals to be able to make changes on our web app
 
 Within the Mongo Shell (again, that's within the path listed above and then run `./mongo`), let's start by viewing the databases and using one of them.
 
+#### Choose Database
+
+Right after running `./mongo`, run `show databases` and look for the one called 'final'.
+
+Use it by running `use final`.
+
+Next, check out the tables within the program by running `show tables`. Now, let's get into some CRUD commands.
+
+## CRUD Commands
+
+### Create
+
+Create a new user: 
+
+
+### Read 
+
+Read in all of the entries from a particular table. 
+
+`db.[TABLE NAME HERE].find()` ---> Retrieves all entries from table.
+
+Ex: `db.users.find()`
+
+
+### Updated
+
+### Delete
+
+
+
 
 ## Built With
 * [Bootstrap 3](https://getbootstrap.com/docs/3.3/css/) - The CSS framework used
