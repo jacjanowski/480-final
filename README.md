@@ -17,9 +17,46 @@ After downloading, run the following commands to confirm:
 
 `npm -v`
 
-Once confirmed, next we go to installing the program. Go ahead and download the _.zip_ file for this repo.
+Once confirmed, next we go to installing the program. Go ahead and download the _.zip_ file for this repo. 
+
+Once downloaded, go to your 'Program Files' and find the directory MongoDB. 
+
+The path should be similar to this:
+
+`Program Files/MongoDB/Server/4.0/bin`
+
+From in here, you will see all of the MongoDB executables in order for our database to be linked to our program.
+
+## Running the Program
+1. Go to `Program Files/MongoDB/Server/4.0/bin` and run the following command:
+`./mongod`
+2. Go into the directory where the _app.js_ file is located from the _.zip_ file. 
+Once there, run the following command:
+`node app.js`
+You will receive a message in console showing 'Gallery of the Globe server is live'. 
+3. Go ahead and open a browser and in the URL, type in `localhost:3000`. You should now see the locally deployed version of the program!
+4. To view all database information regarding tables, users, posts, comments, etc., go back into `Program Files/MongoDB/Server/4.0/bin` and run the Mongo Shell by typing the command `./mongo`.
+
+## Interacting with Mongo Shell
+This is where we use CRUD fundamentals to be able to make changes on our web app via Mongo Shell commands. Here are some instructions to play around with and notice changes you've made:
+
+Within the Mongo Shell (again, that's within the path listed above and then run `./mongo`), let's start by viewing the databases and using one of them.
+
+
 ## Built With
-* [Semantic UI](https://semantic-ui.com/) - The CSS framework used
+* [Bootstrap 3](https://getbootstrap.com/docs/3.3/css/) - The CSS framework used
 * [Font Awesome](https://fontawesome.com/v4.7.0/) - Fonts used 
-* [Google Charts](https://developers.google.com/chart) - Used to generate charts on click.
-* HTML, CSS, JavaScript, JQuery
+
+### Front End
+* HTML
+* CSS
+* JavaScript
+* JQuery
+
+### Back End
+* MongoDB
+* Mongoose
+* Passport.js
+* Express
+* NodeJS
+* Connect-Flash
