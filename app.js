@@ -34,7 +34,7 @@ app.use(flash());
 
 
 //seed the DB
-// seedDB();
+//seedDB();
 
 
 //passport Configuration
