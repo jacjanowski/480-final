@@ -63,10 +63,14 @@ Read in all of the entries from a particular table.
 
 `db.[TABLE NAME HERE].find()` ---> Retrieves all entries from table.
 
-Ex: `db.users.find()`
+- Ex: `db.users.find()`
+- Ex: `db.users.find({"username":"sean"})` ---> Find user with the username 'sean'.
 
+### Update
 
-### Updated
+Change the Title from of the campground 'Misty Winds' to 'Upper Penninsula'.
+
+`db.campgrounds.update({"name":"Misty Winds"}, {$set :{"name":"Upper Peninsula"}})`
 
 ### Delete
 
