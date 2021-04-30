@@ -17,7 +17,15 @@ After downloading, run the following commands to confirm:
 
 `npm -v`
 
-Once confirmed, next we go to installing the program. Go ahead and download the _.zip_ file for this repo. 
+Once confirmed, next we go to installing the program. Go ahead and download the _.zip_ file for this repo or just clone this repo.
+
+##### Git Clone
+
+- Create a new directory
+- cd C:/Users/user/my_project
+- Initialize git: `git init`
+- `git clone https://github.com/jacjanowski/480-final.git`
+
 
 Once downloaded, go to your 'Program Files' and find the directory MongoDB. 
 
