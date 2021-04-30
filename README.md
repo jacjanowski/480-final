@@ -96,6 +96,7 @@ Once confirmed that you have created the user, go ahead and delete them by doing
 
 ## Built With
 * [Bootstrap 3](https://getbootstrap.com/docs/3.3/css/) - The CSS framework used
+* [Semantic UI](https://semantic-ui.com/) - Another CSS framework
 * [Font Awesome](https://fontawesome.com/v4.7.0/) - Fonts used 
 
 ### Front End
