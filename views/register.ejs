@@ -5,14 +5,34 @@
 	<div style="text-align: center;" class="row">
 		<h1>Sign Up!</h1>
 
-		<form action="/register" method="POST">
+
+		<form class="ui form" action="/register" method="POST">
+			<div class="field">
+				<h4>Username</h4>
+				<input style="width: 50%;" type="text" name="username" placeholder="Username">
+			</div>
+			<div class="field">
+				<h4>Password</h4>
+				<input style="width: 50%;" type="password" name="password" placeholder="Password">
+			</div>
+			<div style="text-align:-webkit-center;" class="form-group">
+				<h4>Secret Code</h4>
+				<input style="width: 25%; margin-top: 10px;" class="form-control" type="text" name="adminCode"
+					placeholder="enter code">
+			</div>
+			<input type="submit" value="Sign Up!" class="ui primary button">
+		</form>
+
+
+		<!-- <form action="/register" method="POST">
 			<input type="text" name="username" placeholder="username">
 			<input type="password" name="password" placeholder="password">
 			<div style="text-align:-webkit-center;" class="form-group">
-				<input style="width: 25%; margin-top: 10px;" class="form-control" type="text" name="adminCode" placeholder="enter code">
+				<input style="width: 25%; margin-top: 10px;" class="form-control" type="text" name="adminCode"
+					placeholder="enter code">
 			</div>
 			<button>Sign up!</button>
-		</form>
+		</form> -->
 
 	</div>
 </div>

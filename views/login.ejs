@@ -1,17 +1,30 @@
 <%- include("./partials/header") %>
 
 
-<div  class="container">
-	<div style="text-align: center;" class="row">
-		<h1>
+<div class="container">
+	<div class="row" style="text-align: center;"> 
+		<h1 style="text-align: center;">
 			Login page
 		</h1>
 
-		<form id="test" action="/login" method="POST">
+		<form id="test" class="ui form" action="/login" method="POST">
+			<div class="field">
+			  <h4>Username</h4>
+			  <input style="width: 50%;" type="text" name="username" placeholder="First Name">
+			</div>
+			<div class="field">
+			  <h4>Password</h4>
+			  <input style="width: 50%;" type="password" name="password" placeholder="Last Name">
+			</div>
+
+			<input type="submit" value="Login!" class="ui primary button">
+		  </form>
+
+		<!-- <form id="test" action="/login" method="POST">
 			<input type="text" name="username" placeholder="username">
 			<input type="password" name="password" placeholder="password">
 			<input type="submit" value="Login!">
-		</form>
+		</form> -->
 	</div>
 </div>
 
