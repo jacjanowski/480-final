@@ -17,7 +17,15 @@ After downloading, run the following commands to confirm:
 
 `npm -v`
 
-Once confirmed, next we go to installing the program. Go ahead and download the _.zip_ file for this repo. 
+Once confirmed, next we go to installing the program. Go ahead and download the _.zip_ file for this repo or just clone this repo.
+
+##### Git Clone
+
+- Create a new directory
+- cd C:/Users/user/my_project
+- Initialize git: `git init`
+- `git clone https://github.com/jacjanowski/480-final.git`
+
 
 Once downloaded, go to your 'Program Files' and find the directory MongoDB. 
 
@@ -88,6 +96,7 @@ Once confirmed that you have created the user, go ahead and delete them by doing
 
 ## Built With
 * [Bootstrap 3](https://getbootstrap.com/docs/3.3/css/) - The CSS framework used
+* [Semantic UI](https://semantic-ui.com/) - Another CSS framework
 * [Font Awesome](https://fontawesome.com/v4.7.0/) - Fonts used 
 
 ### Front End
