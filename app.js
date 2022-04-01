@@ -15,7 +15,7 @@ var express = require("express"),
 var commentRoutes = require("./routes/comments"),
 	campgroundRoutes = require("./routes/campgrounds"),
 	indexRoutes 		 = require("./routes/index");
-var url = process.env.DATABASEURL || "mongodb://localhost/myapp";
+var url = process.env.DATABASEURL || "mongodb://localhost/final";
 mongoose.connect(url, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
