@@ -15,7 +15,7 @@ var express = require("express"),
 var commentRoutes = require("./routes/comments"),
 	campgroundRoutes = require("./routes/campgrounds"),
 	indexRoutes 		 = require("./routes/index");
-var url = process.env.DATABASEURL || "mongodb://localhost/final";
+var url = process.env.DATABASEURL || "mongodb://localhost/myapp";
 mongoose.connect(url, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
@@ -34,7 +34,7 @@ app.use(flash());
 
 
 //seed the DB
-//seedDB();
+seedDB();
 
 
 //passport Configuration
